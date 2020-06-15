@@ -1,15 +1,24 @@
 # Dal Food Bank
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/) version 8.1.0
 This repository is to submit the work on assignment 2 for the course CSCI5709.
-
-
-
+* [AppLink](https://a2-siddharth-kapania.herokuapp.com/)
 * *Date Created*: 14 JUN 2020
 * *Last Modification Date*: 14 JUN 2020
+#Page links
+ For the purpose of this assignment, 4 pages were created which can be accessed by the links below.
+* *Page-1 (Home)*:  https://a2-siddharth-kapania.herokuapp.com/
+* *Page-2 (Login)*:  https://a2-siddharth-kapania.herokuapp.com/login
+* *Page-3 (Forgot password)*:  https://a2-siddharth-kapania.herokuapp.com/forgotpass
+* *Page-4 (Contact Us)*:  https://a2-siddharth-kapania.herokuapp.com/contact
 
+#Design Justifications
+
+* *Front End Framework*: We have chosen to use AngularJS as our framework for the development of front end part of our application. This has been useful because it provides features such as 2-way databinding, dependency injection and the use of directives, which allows developers to assign special behaviours to the Document Object Model (DOM).
+* *Color Scheme*: The color scheme used for our entire project's pages is the color '#E91E63'. This color helps provide an aesthetic design to our web pages and is also easily identifiable by color blind people too. 
+* *Typographic choice*: For this assignment, we have used a google font called Montserrat-Medium of both serif and sans serif type depending on their use. 
 ## Authors
 
-* [Siddharth Kapnaia - B00848946](sid.kapania@dal.ca) 
+* [Siddharth Kapania - B00848946](sid.kapania@dal.ca) 
 
 ## Getting Started
 
