@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="text">
+    <div class="heading1">
+      <h1>Contact us</h1>
+    </div>
+    <div class="text2">
+      <p>
+        If you have any questions or would like to submit a feedback for our services,<br />
+        please feel free to contact us using the email provided below.
+      </p>
+    </div>
+    <div class="heading2">
+      <h1>Email</h1>
+    </div>
+    <div class="text2">
+      loremipusmtextloremipsum@lorem.com
+    </div>
+  </div>
+  <div class="matcard1">
+    <mat-card class="card1" [class.mat-elevation-z12]="true">
+      <div>
+        <h1 class="textx">Please fill in the form below to help us get back to you as quickly as possible.</h1>
+        <mat-form-field class="form1">
+          <input type="text" aria-label="items" matInput placeholder="Enter Name" />
+        </mat-form-field>
+        <mat-form-field class="form2" [formGroup]="contactForm">
+          <input
+            type="text"
+            aria-label="items"
+            matInput
+            placeholder="Enter Email ID"
+            [pattern]="namePattern"
+            formControlName="email"
+            [ngClass]="{ 'is-invalid': submitted && values.email.errors }"
+          />
+        </mat-form-field>
+        <div *ngIf="submitted && values.email.errors">
+          <div *ngIf="values.email.errors.required"><mat-error>**Email is required</mat-error></div>
+          <div *ngIf="values.email.errors.email"><mat-error>**Email must be a valid email address</mat-error></div>
+        </div>
+        <mat-form-field appearance="fill" class="form3">
+          <mat-label>Enter your query here</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="accent" class="button-submit" (click)="clickMethod()">SUBMIT</button>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+<section class="container">
+  <div>
+    <mat-toolbar [class.mat-elevation-z7]="true">
+      <span class="title"> <mat-icon>eco</mat-icon>DAL FOOD BANK</span>
+
+      <div class="spacer"></div>
+      <div fxShow="true" fxHide.lt-md="true">
+        <a mat-button [routerLink]="'/home'">Home</a>
+        <a mat-button (click)="clickMethod()">Products</a>
+      </div>
+      <div fxShow="true" fxHide.xs="true">
+        <a mat-button (click)="clickMethod()">Orders</a>
+        <a mat-button (click)="clickMethod()">Cart</a>
+      </div>
+      <div fxShow="true">
+        <a mat-button [routerLink]="'/contact'">Contact Us</a>
+        <a mat-raised-button [routerLink]="'/login'" color="accent">Sign Up</a>
+      </div>
+    </mat-toolbar>
+    <div>
+      <h1 class="h1-text">{{ welcome_text1 }}</h1>
+    </div>
+    <div class="card-landing-page">
+      <mat-card class="card-home" [class.mat-elevation-z7]="true">
+        <h1 class="h2text">{{ welcome_text2 }}</h1>
+        <form>
+          <mat-form-field appearance="outline" class="search-bar">
+            <input
+              type="text"
+              aria-label="items"
+              matInput
+              placeholder="Search food"
+              [formControl]="foodItem"
+              [pattern]="foodItemPattern"
+            />
+          </mat-form-field>
+          <mat-icon routerLinkActive="active" routerLink="/products">search</mat-icon>
+          <div *ngIf="foodItem.errors?.pattern" class="alert-text">Please enter only text</div>
+        </form>
+        <button mat-raised-button color="accent" (click)="clickMethod()" class="button1">Order Now</button>
+        <button mat-stroked-button routerLinkActive="active" routerLink="/login" class="button2">Sign In</button>
+      </mat-card>
+    </div>
+    <div>
+      <h1 class="h1-text">How we work ?</h1>
+    </div>
+    <div class="containerchild">
+      <mat-card class="con" [class.mat-elevation-z5]="true">
+        <img src="assets/media/picture2.jpg" class="img-responsive" />
+        <mat-card-title>With Students</mat-card-title>
+        <mat-card-content
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</mat-card-content
+        >
+      </mat-card>
+      <mat-card class="con" [class.mat-elevation-z5]="true">
+        <img src="assets/media/picture3.jpg" class="img-responsive" />
+        <mat-card-title>With Volunteers</mat-card-title>
+        <mat-card-content
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</mat-card-content
+        >
+      </mat-card>
+      <mat-card class="con" [class.mat-elevation-z5]="true">
+        <img src="assets/media/picture4.jpg" class="img-responsive" />
+        <mat-card-title>With Suppliers</mat-card-title>
+        <mat-card-content
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</mat-card-content
+        >
+      </mat-card>
+    </div>
+    <div class="containerchild">
+      <img src="assets/media/picture1.png" class="con2" [class.mat-elevation-z10]="true" />
+      <div class="con3">
+        <p class="textourmission">Our Mission</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div>
+    <mat-toolbar class="footermain">© Lorem Ipsum 2020</mat-toolbar>
+  </div>
+</footer>

@@ -1,0 +1,74 @@
+.container {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #e91e63;
+  justify-content: left;
+  align-self: start;
+  overflow: auto;
+}
+.text {
+  flex: 3.5;
+  height: 100%;
+  margin: 3%;
+  font-weight: 300;
+}
+.heading1 {
+  font-size: x-large;
+}
+.text2 {
+  font-size: large;
+  font-weight: 200;
+}
+.heading2 {
+  font-size: x-large;
+  margin-top: 15%;
+}
+
+.matcard1 {
+  flex: 1.5;
+  height: 100%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-right: 8%;
+  font-size: x-small;
+}
+.textx {
+  color: #e91e63;
+  font-weight: 100;
+  margin: 10%;
+}
+
+.form1 {
+  margin: 10%;
+  width: 70%;
+  font-size: large;
+}
+.form2 {
+  margin-top: 1%;
+  margin-left: 10%;
+  width: 70%;
+  font-size: large;
+}
+.form3 {
+  font-size: large;
+  margin-top: 15%;
+  margin-left: 10%;
+  width: 70%;
+}
+
+.button-submit {
+  margin: 2%;
+  margin-left: 10%;
+  width: 70%;
+  margin-bottom: 10%;
+}
+mat-error {
+  font-size: smaller;
+  font-weight: normal;
+  padding-left: 15%;
+}

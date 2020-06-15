@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-card class="mat1" [class.mat-elevation-z7]="true">
+    <div>Sign In</div>
+    <div class="signin">Please enter your registered ID and password below</div>
+    <div>
+      <mat-form-field class="mat-form" appearance="outline" [formGroup]="signinForm">
+        <input
+          type="text"
+          aria-label="items"
+          matInput
+          placeholder="Enter Id"
+          [pattern]="foodItemPattern"
+          formControlName="email"
+          [ngClass]="{ 'is-invalid': submitted && values.email.errors }"
+        />
+      </mat-form-field>
+      <div *ngIf="submitted && values.email.errors">
+        <div *ngIf="values.email.errors.required">Email is required</div>
+        <div *ngIf="values.email.errors.email">Email must be a valid email address</div>
+      </div>
+    </div>
+    <div>
+      <mat-form-field class="mat-form" appearance="outline">
+        <input type="password" matInput placeholder="Enter Password" [minLength]="6" formControlName="password" />
+      </mat-form-field>
+      <div *ngIf="values.password.errors.minLength">Password must be a minimuim of 6 characters</div>
+    </div>
+
+    <div>
+      <a class="forgot-pass" [routerLink]="'/forgotpass'">Forgot Password ?</a>
+    </div>
+    <div>
+      <button mat-raised-button color="accent" class="button-continue">CONTINUE</button>
+    </div>
+  </mat-card>
+
+  <mat-card class="mat1" [class.mat-elevation-z7]="true">
+    <div>New Here ?</div>
+    <div>
+      <button mat-raised-button color="accent" class="button-signup" (click)="clickMethod()">SIGN UP</button>
+    </div>
+  </mat-card>
+</div>
