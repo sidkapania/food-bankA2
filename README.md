@@ -11,7 +11,7 @@ This repository is to submit the work on assignment 2 for the course CSCI5709.
 * *Page-3 (Forgot password)*:  https://a2-siddharth-kapania.herokuapp.com/forgotpass
 * *Page-4 (Contact Us)*:  https://a2-siddharth-kapania.herokuapp.com/contact
 
-#Design Justifications
+##Design Justifications
 
 * *Front End Framework*: We have chosen to use AngularJS as our framework for the development of front end part of our application. This has been useful because it provides features such as 2-way databinding, dependency injection and the use of directives, which allows developers to assign special behaviours to the Document Object Model (DOM).
 * *Color Scheme*: The color scheme used for our entire project's pages is the color '#E91E63'. This color helps provide an aesthetic design to our web pages and is also easily identifiable by color blind people too. 
